@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+    <base href="$FLUTTER_BASE_HREF">
+  -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="hello_world">
+  <meta name="theme-color" content="#317EFB" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>hello_world</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    header {
+      background-color: #007bff;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    .container {
+      width: 90%;
+      /* Adjusted width for better responsiveness */
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+
+  <div class="container">
+    <h2>About Us</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet libero nec urna placerat vehicula. Nulla
+      facilisi. Phasellus ut nisi non nibh vehicula pulvinar. Donec at mi auctor, commodo quam ut, fermentum velit.
+      Integer quis sapien libero. Duis vehicula eros non enim commodo, vel hendrerit est vehicula. Mauris bibendum risus
+      vel felis varius, vitae dignissim lorem lacinia. Donec rutrum felis a fermentum hendrerit.</p>
+
+    <h2>Our Services</h2>
+    <ul>
+      <li>Web Development</li>
+      <li>Graphic Design</li>
+      <li>Digital Marketing</li>
+    </ul>
+
+    <h2>Contact Us</h2>
+    <p>Email: info@example.com</p>
+    <p>Phone: 123-456-7890</p>
+  </div>
+  <script>
+    window.addEventListener('load', function (ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function (engineInitializer) {
+          engineInitializer.initializeEngine().then(function (appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+  <script src="/App.js"></script>
+</body>
+
+</html>
